@@ -1,0 +1,6 @@
+- To manage the opam environment I first initialized opam using the `--bare` option
+- In the `shell.nix` I'm running the opam init again. If it is already initialzed it has no effect.
+    - it ensures that opam is initialized
+- Then I manually create a local switch in my dev repo: `opam switch create ./`
+- And I add the dependency like: `dune`, `ocaml-lsp-server` and everything that is needed.
+    - not the with nixos the system dependencies must be handled manually 
