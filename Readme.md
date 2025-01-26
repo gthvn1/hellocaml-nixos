@@ -3,9 +3,9 @@
 I'm not sure that it is the best way to configure the project but for now here it is:
 
 - First I run `nix-shell -p opam` to  initialize opam using the `--bare` option. I only do that
-once for all projects.
+once for all projects because it create an `.opam` in HOME. So if you already create it no need to do it again.
 
-- In the `shell.nix` I'm running the opam init again just to ensure that it has been initialized once. If it
+- In the `shell.nix` file I'm running the opam init again just to ensure that it has been initialized once. If it
 is already initialzed it has no effect.
 - Then I manually create a local switch in my dev repo: `opam switch create ./`
 - And I add the dependency like: `dune`, `ocaml-lsp-server` and everything that is needed.
