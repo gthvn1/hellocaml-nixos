@@ -13,14 +13,19 @@ is already initialzed it has no effect.
 - Once setup I quit and reload the nix-shell.
 
 - Now I can setup a minimal project. I could use `dune init` but I prefere to create a minimal
-  - `dune` file
-```
-(executable
-  (name main))
-```
-  - `dune-project`
-```
-(lang dune 3.17)
-```
-  - `.ocamlformat` empty file
-  - and finally the `main.ml` that prints ***Hello, Sailor!***
+    - `dune` file
+
+    ```
+    (executable
+      (name main))
+    ```
+
+    - `dune-project` file
+
+    ```
+    (lang dune 3.17)
+    ```
+
+    - `.ocamlformat` empty file
+  
+- and finally the `main.ml` that prints ***Hello, Sailor!***
